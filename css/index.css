@@ -179,6 +179,7 @@ nav .top h1 {
 nav .top ul {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 800px;
   margin-bottom: 10px;
 }
@@ -239,6 +240,21 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  font-size: 15px;
+  width: 100px;
+  height: 30px;
+  color: white;
+  background-color: black;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: black;
 }
 .home .walk .walk-img {
   width: 46%;

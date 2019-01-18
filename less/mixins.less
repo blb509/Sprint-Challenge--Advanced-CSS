@@ -1,1 +1,23 @@
 // Mixins Here
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.custom-btn(@width: 100px, @height: 30px, @bgcolor: black, @font-color: white) {
+    font-size: 15px;
+    width: @width;
+    height: @height;
+    color: @font-color;
+    background-color: @bgcolor;
+    border-radius: 4px;
+    .center;
+
+    &:hover {
+        background-color: @font-color;
+        color: @bgcolor;
+      }
+
+}
