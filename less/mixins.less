@@ -1,1 +1,35 @@
 // Mixins Here
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+.full() {
+  width: 100%;
+}
+
+.custom-btn(@width: 100px, @height: 30px, @font-color: white) {
+    font-size: 15px;
+    width: @width;
+    height: @height;
+    color: @font-color;
+    background-color: @btn-bg-color;
+    border-radius: 4px;
+    .center;
+
+    @media @phone {
+      width: 100%;
+      height: 50px;
+    }
+
+
+
+    &:hover {
+        background-color: @font-color;
+        color: @btn-bg-color;
+      }
+
+}
